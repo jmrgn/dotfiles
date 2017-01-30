@@ -1,6 +1,11 @@
+scriptencoding utf-8
+set encoding=utf-8
+
 set nocp
 set directory=~/.vim/tmp
 set backupskip=/tmp/*,/private/tmp/*
+
+set list listchars=tab:» ,trail:›,extends:…
 
 " Manage multiple buffers
 set hidden
