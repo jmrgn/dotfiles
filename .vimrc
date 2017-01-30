@@ -143,6 +143,12 @@ hi Folded term=standout ctermfg=3 ctermbg=none
 " Searching & Replacing
 set hlsearch
 
+" pep8
+let g:pep8_map='<leader>8'
+
+" trailing whitespace
+set list listchars=tab:» ,trail:›,extends:…
+
 " Enable extended % matching
 runtime macros/matchit.vim
 
