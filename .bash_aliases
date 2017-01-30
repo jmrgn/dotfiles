@@ -13,5 +13,12 @@ if command -v ack-grep >/dev/null; then
 fi
 # Enables alias expansion while using sudo
 alias sudo='sudo '
+alias lal='ls -al'                                                            
+alias cd..='cd ..'
+alias home='cd ~'
+alias p='ps -uaw'
+alias pass='pwqgen'
+alias agrep='ack-grep'
 
 function c() { curl -vvv $@; echo; }
+echo "Running .bash_alias settings"
