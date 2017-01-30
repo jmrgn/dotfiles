@@ -5,7 +5,7 @@ set nocp
 set directory=~/.vim/tmp
 set backupskip=/tmp/*,/private/tmp/*
 
-set list listchars=tab:» ,trail:›,extends:…
+" set list listchars=tab:» ,trail:›,extends:…
 
 " Manage multiple buffers
 set hidden
@@ -150,9 +150,6 @@ set hlsearch
 
 " pep8
 let g:pep8_map='<leader>8'
-
-" trailing whitespace
-set list listchars=tab:» ,trail:›,extends:…
 
 " Enable extended % matching
 runtime macros/matchit.vim
