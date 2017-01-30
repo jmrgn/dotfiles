@@ -30,3 +30,72 @@ defscrollback 50000
 
 caption always "%{gk}[ %{G}%H %{g}][%= %{wk}%?%-Lw%?%{=b kR}(%{W}%n*%f %t%?(%u)%?%{=b kR})%{= kw}%?%+Lw%?%?%= %{g}][%{Y}%l%{g}]%{=b C}[ %m/%d %c ]%{W}"
 
+# Locking doesn't seem to work in our environment, but it does break your session!
+# Disable it:
+bind x
+bind ^x
+
+bind c screen 1
+bind ^c screen 1
+bind 0 select 10                                                            
+
+screen -t chef      1
+select 1
+stuff "cd /opt/chef^M"
+
+screen -t api       2
+select 2
+stuff "cd ~/dev/api^M"
+stuff ". env/bin/activate.fish^M"
+
+screen -t tasks     3
+select 3
+stuff "cd ~/dev/tasks^M"
+stuff ". env/bin/activate.fish^M"
+
+screen -t panel     4
+select 4
+stuff "cd ~/dev/panel^M"
+
+screen -t logs      5
+select 5
+stuff "cd ~/dev/logs^M"
+
+screen -t proxy     6
+select 6
+stuff "cd ~/dev/proxy^M"
+
+screen -t setup     7
+select 7
+stuff "cd ~/dev/setup^M"
+
+screen -t mysql     8
+select 8
+stuff "sudo -H mysql -u dbadmin positronics^M"
+
+screen -t sh        9
+select 9
+
+select 1
+
+
+term screen-256color
+
+# Use terminal scroll bar
+defscrollback 9999
+termcapinfo xterm* ti@:te@
+
+bindkey "^[Od" prev  # change window with ctrl-left
+bindkey "^[Oc" next  # change window with ctrl-right
+
+# Map fn keys to screens
+bindkey -k k1 select 1
+bindkey -k k2 select 2
+bindkey -k k3 select 3
+bindkey -k k4 select 4
+bindkey -k k5 select 5
+bindkey -k k6 select 6
+bindkey -k k7 select 7
+bindkey -k k8 select 8
+bindkey -k k9 select 9
+bindkey -k k0 select 0
