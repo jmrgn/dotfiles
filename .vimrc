@@ -140,7 +140,7 @@ if has("folding")
 endif
 
 " shift+d goes to left tab, shift+l goes to right tab (in non-edit mode)
-nnoremap D gT
+nnoremap F gT
 nnoremap L gt
 
 hi Folded term=standout ctermfg=3 ctermbg=none
