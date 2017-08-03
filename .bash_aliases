@@ -19,7 +19,8 @@ alias home='cd ~'
 alias p='ps -uaw'
 alias pass='pwqgen'
 alias agrep='ack-grep'
-alias git-key='eval "$(ssh-agent -s)";ssh-add ~/.ssh/id_github'
+alias git-key='eval "$(ssh-agent -s)";ssh-add ~/.ssh/id_rsa'
+git-key
 
 function c() { curl -vvv $@; echo; }
 echo "Running .bash_alias settings"
