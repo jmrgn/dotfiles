@@ -5,7 +5,7 @@ set nocp
 set directory=~/.vim/tmp
 set backupskip=/tmp/*,/private/tmp/*
 
-" set list listchars=tab:» ,trail:›,extends:…
+set list listchars=tab:»·,trail:·,nbsp:·,extends:…
 
 " Manage multiple buffers
 set hidden
