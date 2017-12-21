@@ -34,9 +34,11 @@ set encoding=utf-8
 set termencoding=utf-8
 
 " Turn plugin features on
-filetype on
-filetype plugin on
-filetype indent on
+filetype plugin indent on
+
+
+" On pressing tab, insert 4 spaces
+set expandtab
 set autoindent
 set showmatch
 
@@ -51,12 +53,13 @@ set mouse=a
 set mousemodel=popup
 
 " Spacing and tabbing
-set smarttab
-set expandtab
+" show existing tab with 4 spaces width
 set tabstop=4
-set softtabstop=4
+
+" when indenting with '>', use 4 spaces width
 set shiftwidth=4
-set textwidth=100
+
+set textwidth=150
 set nowrap
 
 " Split manipulation
