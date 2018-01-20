@@ -45,6 +45,9 @@ PATH=$PATH:$HOME/.bin
 
 PATH=$HOME/bin:$PATH
 
+if [ -f ~/.config/exercism/exercism_completion.bash ]; then
+  . ~/.config/exercism/exercism_completion.bash
+fi
 
 export EDITOR=vim
 
