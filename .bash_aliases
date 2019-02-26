@@ -20,6 +20,7 @@ alias p='ps -uaw'
 alias pass='pwqgen'
 alias agrep='ack-grep'
 alias git-key='eval "$(ssh-agent -s)";ssh-add ~/.ssh/id_rsa'
+alias gig='cd ~/go/src/github.com/omnivore/giganto'
 
 function c() { curl -vvv $@; echo; }
 echo "Running .bash_alias settings"
