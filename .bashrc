@@ -50,4 +50,5 @@ if [ -f ~/.config/exercism/exercism_completion.bash ]; then
 fi
 
 export EDITOR=vim
-
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=~/go
