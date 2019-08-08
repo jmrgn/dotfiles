@@ -33,7 +33,7 @@ alias screen-go='screen -S go -c ~/.screen-go'
 alias sdata='screen -xr data'
 alias sdev='screen -xr dev'
 alias sgo='screen -xr go'
-alias dev-redshift='psql -h omnivore-test2.ccluq3i2u8yo.us-east-1.redshift.amazonaws.com  -p 5432  -d omnidata --username=jmorgan'
+alias dev-redshift='psql -h omnivore-test2.ccluq3i2u8yo.us-east-1.redshift.amazonaws.com  -p 5439  -d omnidata --username=jmorgan'
 alias dev-pg-1='psql -h localhost  -p 5432  -d omnidata --username=dbadmin'
 alias dev-pg-2='psql -h jmorgan.cd31xgew6oye.us-east-1.rds.amazonaws.com  -p 5432  -d omnidata --username=dbadmin'
 
